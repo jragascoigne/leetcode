@@ -1,4 +1,4 @@
-# 19 - Remove Nth Node From End of List (med)
+# 19. Remove Nth Node From End of List (med)
 
 # intuition
 my initial idea was to use a dummy list and a while loop. this mostly worked
