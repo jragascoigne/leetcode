@@ -5,7 +5,8 @@ value
 
 we can do this simply by returning (len arr - k) which gives the index of the kth largest element (as we have already sorted!)
 
-#code
+# code
+```py
 class KthLargest:
 
     def __init__(self, k: int, nums: List[int]):
@@ -17,4 +18,4 @@ class KthLargest:
         self.arr.append(val)
         self.arr.sort()
         return self.arr[len(self.arr) - self.k]
-        
+```
