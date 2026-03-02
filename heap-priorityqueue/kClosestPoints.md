@@ -4,6 +4,7 @@ function to sort the values and return the k indexed point tuples as a list of p
 as i am just sorting the points by their distances and then appending them to a new list. 
 
 # code
+```py
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         s_d = sorted(points, key=lambda item: ((item[0])**2 + (item[1])**2) ** 0.5)
@@ -13,5 +14,4 @@ class Solution:
             ret.append(s_d[i])
 
         return ret
-        
-        
+```
