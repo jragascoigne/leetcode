@@ -7,6 +7,7 @@ then just return the value of the final stone if the length of stones is [greate
 else 0. 
 
 # code
+```py
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
         while len(stones) > 1:
@@ -23,3 +24,4 @@ class Solution:
                 stones[-1] = abs(y - x)
             
         return stones[0] if len(stones) == 1 else 0
+```
