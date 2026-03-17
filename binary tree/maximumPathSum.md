@@ -35,3 +35,29 @@ class Solution:
         return max(0, path)   
 
 ```
+
+
+# revised solution
+more time efficient, did away with the helper function.
+
+```py
+
+class Solution:
+    def maxPathSum(self, root: Optional[TreeNode]) -> int:
+        self.max_val = float('-inf')
+
+        def dfs(root):
+            
+            if not root:
+                return 0
+
+            left = max(dfs(root.left), 0)
+            right = max(dfs(root.right), 0)
+            self.max_val = max(self.max_val, root.val + left + right)
+
+            return root.val + max(left, right)
+    
+        dfs(root)
+        return self.max_val
+
+```
