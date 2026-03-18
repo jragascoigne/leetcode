@@ -8,3 +8,4 @@ class Solution:
         mask = (1 << bit_length) - 1
         return n ^ mask
 ```
+
