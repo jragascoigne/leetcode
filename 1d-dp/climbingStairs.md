@@ -1,5 +1,5 @@
 # intuition
-after watching the neetcode video it made sense that this was a sequence question
+after watching the neetcode video it made sense that this was a sequence question. need to go back and do these 1d-dp q's again
 
 # code
 ```py
