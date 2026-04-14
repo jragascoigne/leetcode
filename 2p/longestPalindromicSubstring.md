@@ -1,3 +1,6 @@
+# intuition
+neetcode sol - two pointers implementation
+
 # code 
 ```py
 class Solution:
