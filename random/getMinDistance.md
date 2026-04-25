@@ -5,6 +5,7 @@ a bit, i realised we dont need to store the index at all, we just want the minim
 if the numbers match. for most cases this only happens once, however for cases where there are multiple of the smae value in the list this comparison happens n times.
 
 # code
+
 ```py
 class Solution:
     def getMinDistance(self, nums: List[int], target: int, start: int) -> int:
